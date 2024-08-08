@@ -1,0 +1,69 @@
+.footer{
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    
+    .infa{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90vw;
+        margin-top: 4vh;
+        
+        .text{
+            font-family: 'Play';
+            color: #1B2B42;
+            font-size: 1.5vw;
+            margin-top: 8vh;
+        }
+        img{
+            height: 18vh;
+            width: auto;
+        }
+        .conntacts{
+            font-family: 'Play';
+            color: #1B2B42;
+            font-size: 1.5vw;
+            margin-top: 4vh;
+            .info{
+                margin-bottom: 2vh;
+                display: flex;
+                img{
+                    height: 3vh;
+                    width: auto;
+                    margin-right: 1vw;
+                    margin-top: 0.5vh;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        
+        .infa{
+            margin-top: 0vh;
+            flex-direction: column;
+            align-items: center;
+            
+            .text{
+                font-size: 3vw;
+            }
+            img{
+                margin-top: 2vh;
+               height: auto;
+               width: 35vw;
+            }
+            .conntacts{
+               
+                .info{
+                    font-size: 3vw;
+                    img{
+                       height: auto;
+                       width: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}

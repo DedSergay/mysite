@@ -1,0 +1,619 @@
+
+.home {
+    margin-left: 0vw;
+    margin-right: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+
+    .bloc1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5vh;
+        background-image:url("../../../public/image.png");
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;     
+        background-position: center;
+      
+
+        .Text {
+            font-size: 4.5em;
+            text-align: center;
+            font-family: 'Calibri';
+            font-weight: 600;
+            color: #29333F;
+        }
+
+        .text {
+            margin-top: 2vh;
+            font-size: 2em;
+            font-family: 'Calibri';
+            font-weight: 600;
+            color: #29333F;
+        }
+
+        .button {
+            margin-top: 2vh;
+            background-color: #29333F;
+            color: #FFFFFF;
+            width: 11em;
+            height: 2.5em;
+            border: none;
+            border-radius: 0.6vw;
+            font-family: 'Calibri';
+            font-weight: 600;
+            font-size: 2.2em;
+            box-shadow: 0px 0.5vw 2vw rgba(0, 0, 0, 0.3)
+        }
+
+        .button:hover {
+            background-color: #3d5069;
+        }
+
+        @media (max-width: 768px) {
+            
+
+            .Text {
+                font-size: 3.5em;
+            }
+
+            .text {
+
+                font-size: 2em;
+            }
+
+            .button {
+                height: 2.5em;
+                width: 10em;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .bloc2 {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .Title {
+            margin-top: 1em;
+            font-size: 3.8vw;
+            color: #1B2B42;
+            font-family: 'Calibri';
+            font-weight: 600;
+        }
+
+        .assortment {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+
+            .line {
+                display: flex;
+                justify-content: space-between;
+
+                .box {
+                    padding: 5vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .text {
+                        font-family: 'Play', sans-serif;
+                        color: #29333F;
+                        font-weight: bolder;
+                        font-size: 1.5vw;
+                        margin-bottom: 0.8vh;
+
+                    }
+
+                    .Imag {
+                        img {
+                            height: auto;
+                            width: 18vw;
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 20vw;
+
+                        .price {
+                            font-family: 'Play', sans-serif;
+                            color: #29333F;
+                            font-weight: bolder;
+                            font-size: 1.5vw;
+                        }
+
+                        .more {
+                            margin-top: 0.5vh;
+                            height: 2em;
+                            width: 8em;
+                            background: linear-gradient(45deg, #1B2B42, #325280);
+                            border: none;
+                            border-radius: 0.5vw;
+                            color: #FFFFFF;
+                            font-family: 'Play', sans-serif;
+                            font-weight: bold;
+                            font-size: 1.5vw;
+                        }
+
+                        .more:hover {
+                            background: linear-gradient(45deg, #000000, #000000);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .Title {
+                font-size: 6vw;
+            }
+
+            .assortment {
+                .line {
+                    display: flex;
+                    flex-wrap: wrap; // Позволяет элементам переноситься на следующую строку
+                    justify-content: space-between;
+                    margin-left: 4vw;
+                    flex: 1 1 45%;
+
+                    .box {
+
+                        .text {
+                            font-size: 2.5vw;
+                        }
+
+                        .Imag {
+                            img {
+                                height: auto;
+                                width: 30vw;
+                            }
+                        }
+
+                        .bottom {
+
+                            width: 30vw;
+
+                            .price {
+                                font-size: 2.5vw;
+                            }
+
+                            .more {
+                                font-size: 2.5vw;
+                            
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bloc3 {
+        display: flex;
+        width: 100vw;
+        background-image:url("../../../public/image 15.png");
+        width: 100vw;
+        height: 110vh;
+        background-size: cover;     
+        background-position: center;
+        justify-content: center;
+        flex-direction: row;
+
+        .photo {
+            margin-top: 7em;
+            padding: 5vw;
+            img {
+                height: auto;
+                width: 33vw;
+            }
+        }
+
+        .text {
+            margin-top: 7em;
+            color: #29333F;
+            padding: 5vw;
+            .titul {
+                font-family: 'Calibri';
+                font-weight: 600;
+                font-size: 3.8vw;
+
+            }
+
+            .infa {
+                margin-top: 5vh;
+                font-family: 'Play', sans-serif;
+                font-size: 1.5vw;
+                text-align: justify;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            .photo {
+                padding: 0vw;
+                img {
+                    height: auto;
+                    width: 50vw;
+                }
+            }
+
+            .text {
+                width: 75vw;
+                text-align: center;
+                margin-top: 0vh;
+
+                .titul {
+                    font-size: 6vw;
+                }
+
+                .infa {
+                    font-size: 3vw;
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }
+
+    .bloc4 {
+        display: flex;
+        width: 100vw;
+        height: 160vh;
+        margin-top: 1em;
+        background-image:url("../../../public/image 17.png");
+        background-size: cover;     
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+            width: 100vw;
+            height: auto;
+        }
+
+        .contacs {
+            display: flex;
+            justify-content: space-between;
+            width: 90vw;
+            margin-top: 30vh;
+            .element {
+                background-color: #FFFFFF;
+                height: 55vh;
+                width: 27vw;
+                border-radius: 1vw;
+
+                .titul {
+                    font-family: 'Play', sans-serif;
+                    font-weight: 600;
+                    font-size: 2.2vw;
+                    margin-left: 3vw;
+                    margin-top: 4vh;
+                    color: #29333F;
+                }
+
+                .text {
+                    margin-left: 3vw;
+                    margin-top: 2vh;
+                    margin-right: 3vw;
+                    font-family: 'Play', sans-serif;
+                    font-size: 1.7vw;
+                    display: flex;
+                    flex-direction: row;
+                    color: #29333F;
+
+                    img {
+                        margin-right: 1vw;
+                        height: auto;
+                        width: 2vw;
+                    }
+                }
+            }
+        }
+
+        .connection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90vw;
+            margin-top: 15vh;
+
+            .titul {
+                font-size: 4vw;
+                font-family: 'Calibri';
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+
+            .input {
+
+                margin-top: 1vh;
+                width: 40vw;
+
+                .name {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input {
+                        border-radius: 1vw;
+                        height: 10vh;
+                        width: 13vw;
+                        border: none;
+                        font-size: 2vw;
+                        font-family: 'Calibri';
+                        padding-left: 2vw;
+                        font-weight: 600;
+                    }
+
+                    .Surname {
+                        border-radius: 1vw;
+                        height: 10vh;
+                        width: 20vw;
+                        border: none;
+                        font-size: 2vw;
+                        font-family: 'Calibri';
+                        padding-left: 2vw;
+                        font-weight: 600;
+                    }
+                }
+
+                .email {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 2vh;
+
+                    input {
+                        border-radius: 1vw;
+                        height: 10vh;
+                        width: 24vw;
+                        border: none;
+                        font-size: 2vw;
+                        font-family: 'Calibri';
+                        padding-left: 2vw;
+                        font-weight: 600;
+
+                    }
+
+                    .send {
+                        border-radius: 1vw;
+                        height: 10vh;
+                        width: 11vw;
+                        border: none;
+                        font-size: 2vw;
+                        font-family: 'Play', sans-serif;
+                        font-weight: 600;
+                        background: linear-gradient(45deg, #1B2B42, #325280);
+                        color: #FFFFFF;
+
+                    }
+
+                    .send:hover {
+                        background: linear-gradient(45deg, #000000, #000000);
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contacs {
+                top: 20vh;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .element {
+                    margin-top: 2vh;
+                    height: 20vh;
+                    width: 80vw;
+
+                    .titul {
+                        font-size: 3.5vw;
+                        margin-top: 2vh;
+                    }
+
+                    .text {
+                        margin-top: 1vh;
+                        font-size: 2.5vw;
+
+                        img {
+                            height: auto;
+                            width: 3vw;
+                        }
+                    }
+                }
+            }
+
+            .connection {
+                top: 77vh;
+                flex-direction: column;
+                align-items: center;
+                .titul {
+                    font-size: 6vw;
+
+                }
+
+                .input {
+                    margin-top: 1em;
+                    width: 80vw;
+                    .name {
+
+
+                        input {
+                            height: 7vh;
+                            width: 30vw;
+                            font-size: 3.5vw;
+                        }
+
+                        .Surname {
+                            height: 7vh;
+                            width: 40vw;
+                            font-size: 3.5vw;
+                        }
+                    }
+
+                    .email {
+
+
+                        input {
+                            height: 7vh;
+                            width: 50vw;
+                            font-size: 3.5vw;
+                        }
+
+                        .send {
+                            height: 7vh;
+                            width: 23vw;
+                            font-size: 3.5vw;
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .Modal_Text {
+        color: #29333F;
+        font-family: 'Play', sans-serif;
+        font-size: 1.8vw;
+        text-align: center;
+        @media (max-width: 768px){
+            font-size: 3vw;
+        }
+    }
+   
+
+    .Modal1 {
+        .text {
+            color: #29333F;
+            font-family: 'Play', sans-serif;
+            font-size: 1.8vw;
+            text-align: center;
+        }
+
+        .input {
+
+            margin-top: 5vh;
+
+            .name {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+
+                    border-radius: 1vw;
+                    height: 7vh;
+                    width: 25vw;
+                    border-color: #29333F;
+                    font-size: 1.7vw;
+                    font-family: 'Calibri', sans-serif;
+                    padding-left: 2vw;
+                    font-weight: 600;
+                }
+
+                .Surname {
+                    margin-top: 3vh;
+                    border-radius: 1vw;
+                    height: 7vh;
+                    width: 25vw;
+                    border-color: #29333F;
+                    font-size: 1.7vw;
+                    font-family: 'Calibri';
+                    padding-left: 2vw;
+                    font-weight: 600;
+                }
+            }
+
+            .email {
+                display: flex;
+                flex-direction: column;
+                margin-top: 3vh;
+                align-items: center;
+
+                input {
+                    border-radius: 1vw;
+                    height: 7vh;
+                    width: 25vw;
+                    border-color: #29333F;
+                    font-size: 1.7vw;
+                    font-family: 'Calibri';
+                    padding-left: 2vw;
+                    font-weight: 600;
+
+                }
+
+                .send {
+                    margin-top: 3vh;
+                    border-radius: 1vw;
+                    height: 7vh;
+                    width: 20vw;
+                    border: none;
+                    font-size: 2vw;
+                    font-family: 'Play', sans-serif;
+                    font-weight: 600;
+                    background: linear-gradient(45deg, #1B2B42, #325280);
+                    color: #FFFFFF;
+
+                }
+
+                .send:hover {
+                    background: linear-gradient(45deg, #000000, #000000);
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .text {
+                font-size: 3.7vw;
+            }
+
+            .input {
+                .name {
+                    input {
+                        height: 6vh;
+                        width: 50vw;
+                        font-size: 3vw;
+                    }
+
+                    .Surname {
+                        height: 6vh;
+                        width: 50vw;
+                        font-size: 3vw;
+                    }
+                }
+
+                .email {
+                    input {
+                        height: 6vh;
+                        width: 50vw;
+                        font-size: 3vw;
+                    }
+
+                    .send {
+                        height: 6vh;
+                        width: 40vw;
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}

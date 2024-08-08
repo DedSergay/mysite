@@ -1,0 +1,12 @@
+body {
+    display: flex;                   /* Flexbox для встраивания содержимого */
+    justify-content: center;
+    margin: 0;                  /* Убираем отступы по умолчанию */
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    
+}
+html {
+    scroll-behavior: smooth; /* Для поддержки плавного скроллинга */
+}
